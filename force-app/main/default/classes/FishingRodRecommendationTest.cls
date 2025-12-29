@@ -77,7 +77,7 @@ private class FishingRodRecommendationTest {
 			body,
 			'',
 			new Map<String, String>(),
-			new Map<String, String>{ 'api/products/search' => body }
+			new Map<String, String>{ '/api/products/search' => body }
 		);
 	}
 }

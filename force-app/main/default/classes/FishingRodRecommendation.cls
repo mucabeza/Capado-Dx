@@ -26,7 +26,7 @@ public class FishingRodRecommendation extends Callout {
 	 * @return JSON string with fishing rod recommendations
 	 */
 	public String getRecommendations(Integer maxPrice) {
-		if (maxPrice == null || maxPrice <= 0) {
+		if (maxPrice == null || maxPrice < 0) {
 			maxPrice = DEFAULT_MAX_PRICE;
 		}
 		
